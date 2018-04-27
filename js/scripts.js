@@ -29,20 +29,36 @@ var users = [
 }                
 ]
 
-function filterByAge(age){
+/*function filterByAge(age){
     for(var i=0; i < users.length; i++){
         if (age => users[i].age){
             console.log( assamble( users[i] ) );
 }
 }
-}
+}*/
 
-function assamble(user){
+/*function assamble(user){
     return user.lastname 
     + ', ' 
     + user.name 
     + ' tiene ' 
     + user.children.length 
     + ' hijos ';
-}
+}*/
 
+var listusers = {
+    assamble: function(user){
+    return user.lastname 
+    + ', ' 
+    + user.name 
+    + ' tiene ' 
+    + user.children.length 
+    + ' hijos ';
+    },
+    iterate: function(userslist){
+        for(var i=0; i < userlist.length; i++){
+            console.log(listusers.assamble(userlist[i]));
+        }
+    }
+}
+listusers.assamble(users)
