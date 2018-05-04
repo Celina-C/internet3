@@ -47,18 +47,36 @@ var users = [
 }*/
 
 var listusers = {
+    users: [],
     assamble: function(user){
     return user.lastname 
     + ', ' 
-    + user.name 
+    + user.Name 
     + ' tiene ' 
-    + user.children.length 
+    
     + ' hijos ';
     },
-    iterate: function(userslist){
-        for(var i=0; i < userlist.length; i++){
-            console.log(listusers.assamble(userlist[i]));
+    iterate: function(){
+        for (var i=0; i < listusers.users.length; i++){
+            console.log(listusers.assamble(listusers.users[i]));
         }
+    },
+    setUsers: function (users){
+        listusers.users = users;
     }
 }
-listusers.assamble(users)
+
+/**
+$('clickme').on('click',fuction(){
+    if ($('h1').hasClass('active')){
+        $('h1')
+        .removeClass('active')
+        .addClass('disabled');
+    }
+    else {
+        $('h1')
+        .removeClass('disabled')
+        .addClass('active');
+    }
+}
+ */
